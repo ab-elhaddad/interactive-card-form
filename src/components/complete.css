@@ -41,3 +41,25 @@
   font-size: 1vw;
   color: var(--dark-grayish-violet);
 }
+
+@media screen and (max-width: 768px) {
+  #complete {
+    width: 100%;
+    padding: 10% 10% 0 10%;
+    gap: 5vh;
+    /* border: solid 3px red; */
+  }
+  #complete img {
+    width: 12vh;
+  }
+  #complete .txt {
+    gap: 1.5vh;
+  }
+  #complete .p-1 {
+    font-size: 3.5vh;
+    letter-spacing: 0.5vh;
+  }
+  #complete .p-2 {
+    font-size: 2vh;
+  }
+}
