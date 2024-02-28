@@ -1,0 +1,126 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6vh;
+  position: absolute;
+  margin-left: 10%;
+  width: 35%;
+  height: 100%;
+  /* border: solid 3px red; */
+}
+
+.cards p {
+  margin: 0;
+}
+
+.card-1,
+.card-2 {
+  width: 90%;
+  background-size: cover;
+  width: 27vw;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1 {
+  background-image: url("../../public/images/bg-card-front.png");
+  padding: 1.8vw;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-2 {
+  background-image: url("../../public/images/bg-card-back.png");
+  align-self: flex-end;
+}
+
+.card-1-txt,
+.card-2-txt {
+  color: var(--white);
+  font-size: 0.8vw;
+  letter-spacing: 0.1vw;
+  /* border: solid 3px red; */
+}
+
+.card-1 img {
+  width: 5vw;
+}
+
+.card-1-txt {
+  font-size: 1.8vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.card-1-txt .bottom-txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8vw;
+  width: 23vw;
+  /* border: solid 3px red; */
+}
+
+.card-1-txt .bottom-txt .m-y {
+  align-self: flex-end;
+}
+
+.card-2-txt {
+  margin-left: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin-left: 0;
+    width: 100%;
+    height: 30vh;
+    flex-direction: column-reverse;
+    padding: 4vw;
+    box-sizing: border-box;
+  }
+
+  .card-1,
+  .card-2 {
+    width: 75%;
+    padding: 2vh 2vh 3vh 2vh;
+    box-sizing: border-box;
+  }
+
+  .card-1 {
+    position: absolute;
+    margin-top: 25vh;
+  }
+
+  .card-1 img {
+    width: 15vw;
+  }
+
+  .card-1-txt {
+    width: 100%;
+    font-size: 5.5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-1-txt .bottom-txt {
+    width: 90%;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .card-2-txt {
+    margin-top: 0.5vh;
+    margin-left: 50vw;
+    font-size: 2.7vw;
+  }
+}

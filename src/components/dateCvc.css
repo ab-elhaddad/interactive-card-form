@@ -1,0 +1,18 @@
+.date-cvc {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  margin-right: 0.5vw;
+}
+
+.date #month,
+.date #year {
+  width: 90%;
+  margin-bottom: 1.04vh;
+}
+
+.cvc {
+  width: 50%;
+}

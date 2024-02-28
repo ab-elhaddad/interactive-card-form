@@ -1,0 +1,43 @@
+#complete {
+  width: 70%;
+  height: 100%;
+  gap: 7vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0 20% 0 25%;
+  box-sizing: border-box;
+  display: none;
+  /* border: solid 3px red; */
+}
+
+#complete .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+#complete .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#complete img {
+  width: 5vw;
+  aspect-ratio: 1/1;
+}
+
+#complete .p-1 {
+  margin: 0;
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+}
+
+#complete .p-2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1vw;
+  color: var(--dark-grayish-violet);
+}

@@ -1,0 +1,43 @@
+* {
+  --inear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --red: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  height: 99vh;
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Hide number input arrows (spinners)*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.btn {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  transition: 0.5s;
+  font-size: 2vh;
+  border: none;
+  border-radius: 8px;
+  height: 6vh;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.322);
+}
